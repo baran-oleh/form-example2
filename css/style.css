@@ -22,7 +22,13 @@
     font-size: 15px; }
     .form__name label input, .form__contact label input, .form__password label input {
       width: 233px;
-      height: 25px; }
+      height: 25px;
+      outline: none;
+      border: none;
+      border-bottom: 2px solid #596D48; }
+      .form__name label input:focus, .form__contact label input:focus, .form__password label input:focus {
+        border: 2px solid blue;
+        border-radius: 5px; }
   .form__name label:nth-child(1), .form__contact label:nth-child(1), .form__password label:nth-child(1) {
     margin-right: 50px; }
 
@@ -145,3 +151,9 @@ body {
     .right__section3-btn:hover {
       transform: scale(1.1);
       cursor: pointer; }
+  .right__section3-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500; }
+    .right__section3-text a {
+      text-decoration: none;
+      color: #596D48; }
