@@ -1,0 +1,26 @@
+.form{
+    &__name,
+    &__contact,
+    &__password{
+        border: none;
+        display: flex;
+        margin-bottom: 15px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        & label {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 1px;
+            font-size: 15px;
+            & input {
+                width: 233px;
+                height: 25px;
+            }
+        }
+        & label:nth-child(1){
+            margin-right: 50px;
+        }
+    }
+}
