@@ -5,6 +5,9 @@
         border: none;
         display: flex;
         margin-bottom: 15px;
+        @media screen and (max-width: 650px) {
+            flex-direction: column;
+        }
         &:last-child{
             margin-bottom: 0;
         }
@@ -14,6 +17,10 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             letter-spacing: 1px;
             font-size: 15px;
+            @media screen and (max-width: 650px) {
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
             & input {
                 width: 233px;
                 height: 25px;
@@ -22,6 +29,9 @@
                 border-bottom: 2px solid #596D48;
                 padding: 5px 2px 5px 10px;
                 font-size: 16px;
+                @media screen and (max-width: 650px) {
+                    font-size: 12px;
+                }
                 &:focus{
                     color: aliceblue;
                     background-color:#596D48;
@@ -37,6 +47,9 @@
         }
         & label:nth-child(1){
             margin-right: 50px;
+            @media screen and (max-width: 650px){
+                margin-right: 0;
+            }
         }
     }
 }

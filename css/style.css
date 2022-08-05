@@ -12,6 +12,9 @@
   border: none;
   display: flex;
   margin-bottom: 15px; }
+  @media screen and (max-width: 650px) {
+    .form__name, .form__contact, .form__password {
+      flex-direction: column; } }
   .form__name:last-child, .form__contact:last-child, .form__password:last-child {
     margin-bottom: 0; }
   .form__name label, .form__contact label, .form__password label {
@@ -20,6 +23,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
     font-size: 15px; }
+    @media screen and (max-width: 650px) {
+      .form__name label, .form__contact label, .form__password label {
+        font-size: 13px;
+        margin-bottom: 10px; } }
     .form__name label input, .form__contact label input, .form__password label input {
       width: 233px;
       height: 25px;
@@ -28,6 +35,9 @@
       border-bottom: 2px solid #596D48;
       padding: 5px 2px 5px 10px;
       font-size: 16px; }
+      @media screen and (max-width: 650px) {
+        .form__name label input, .form__contact label input, .form__password label input {
+          font-size: 12px; } }
       .form__name label input:focus, .form__contact label input:focus, .form__password label input:focus {
         color: aliceblue;
         background-color: #596D48;
@@ -38,6 +48,9 @@
         border-bottom: 2px solid red; }
   .form__name label:nth-child(1), .form__contact label:nth-child(1), .form__password label:nth-child(1) {
     margin-right: 50px; }
+    @media screen and (max-width: 650px) {
+      .form__name label:nth-child(1), .form__contact label:nth-child(1), .form__password label:nth-child(1) {
+        margin-right: 0; } }
 
 * {
   margin: 0;
@@ -65,7 +78,7 @@ body {
   @media screen and (max-width: 850px) {
     .container {
       justify-content: center;
-      align-items: space-evenly; } }
+      align-content: space-between; } }
 
 .left {
   flex-basis: 38%;
@@ -151,14 +164,25 @@ body {
         flex-direction: column;
         justify-content: end;
         padding: 10px 10px 30px 40px; } }
+    @media screen and (max-width: 650px) {
+      .right__section1 {
+        padding: 10px 10px 10px 15px;
+        justify-content: center; } }
     .right__section1 blockquote {
       font-family: 'Norse';
       font-weight: 700;
       font-size: 35px;
       letter-spacing: 2px;
       margin-bottom: 15px; }
+      @media screen and (max-width: 650px) {
+        .right__section1 blockquote {
+          font-size: 20px;
+          margin-bottom: 10px; } }
     .right__section1 p {
       font-size: 30px; }
+      @media screen and (max-width: 650px) {
+        .right__section1 p {
+          font-size: 15px; } }
     @media screen and (max-width: 850px) {
       .right__section1 {
         flex-basis: 30%; } }
@@ -170,10 +194,21 @@ body {
       .right__section2 {
         display: flex;
         flex-direction: column; } }
+    @media screen and (max-width: 650px) {
+      .right__section2 {
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
   .right__section2-title {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 27px;
     margin-bottom: 20px; }
+    @media screen and (max-width: 650px) {
+      .right__section2-title {
+        font-size: 20px;
+        margin-bottom: 10px; } }
   .right__section3 {
     grid-area: 7 / 1 / 10 / 2;
     padding: 40px 10px 30px 40px; }
@@ -181,6 +216,9 @@ body {
       .right__section3 {
         display: flex;
         flex-direction: column; } }
+    @media screen and (max-width: 650px) {
+      .right__section3 {
+        padding: 10px 10px 10px 25px; } }
   .right__section3-btn {
     width: 200px;
     height: 40px;
@@ -194,12 +232,22 @@ body {
     letter-spacing: 1px;
     margin-bottom: 15px;
     transition: transform .3s; }
+    @media screen and (max-width: 650px) {
+      .right__section3-btn {
+        width: 150px;
+        height: 35px;
+        font-size: 12px;
+        margin-bottom: 10px; } }
     .right__section3-btn:hover {
       transform: scale(1.1);
       cursor: pointer; }
   .right__section3-text {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 500; }
+    font-weight: 500;
+    font-size: 16px; }
+    @media screen and (max-width: 650px) {
+      .right__section3-text {
+        font-size: 13px; } }
     .right__section3-text a {
       text-decoration: none;
       color: #596D48; }
