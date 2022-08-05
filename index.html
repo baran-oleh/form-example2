@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./favicon/Carlosjj-Google-Jfk-Forms.ico" type="image/x-icon">
 </head>
+
 <body>
     <div class="container">
         <aside class="left">
@@ -22,33 +24,50 @@
             </footer>
         </aside>
         <main class="right">
-         <div class="right__section1">
-            <blockquote><q>A wise king never seeks out war.<br/>
-            But he must always be ready for it.</q></blockquote>
-            <p> - Odin</p>  
-         </div>
-         <div class="right__section2">
-            <h2 class="right__section2-title">Let's do this!</h2>
-            <form action="" class="form" id="form-account">
-               <fieldset class="form__name">
-                <label>First Name<br/> <input type="text" name="name" id="name" required></label>
-                <label>Last Name<br/> <input type="text" name="last-name" id="last-name" required></label>
-               </fieldset>
-               <fieldset class="form__contact">
-                <label>Email<br/> <input type="email" name="email" id="email" required></label>
-                <label>Phone Number<br/> <input type="tel" name="phone" id="phone" required></label>
-               </fieldset>
-               <fieldset class="form__password">
-                <label>Password<br/> <input type="password" name="password" id="password" required></label>
-                <label>Confirm Password<br/> <input type="password" name="password-confirm" id="password-confirm" required></label>
-               </fieldset>
-            </form>
-         </div>
-         <div class="right__section3">
-            <button type="submit" form="form-account" class="right__section3-btn"><span>Create Account</span></button>
-            <p class="right__section3-text">Already have an account? <a href="#">Log in</a></p>
-         </div>   
+            <div class="right__section1">
+                <blockquote><q>A wise king never seeks out war.<br />
+                        But he must always be ready for it.</q></blockquote>
+                <p> - Odin</p>
+            </div>
+            <div class="right__section2">
+                <h2 class="right__section2-title">Let's do this!</h2>
+                <form class="form" id="form-account">
+                    <fieldset class="form__name">
+                        <label>First Name<br /> <input type="text" name="name" id="name" placeholder="Odin"
+                                required></label>
+                        <label>Last Name<br /> <input type="text" name="last-name" placeholder="God" id="last-name"
+                                required></label>
+                    </fieldset>
+                    <fieldset class="form__contact">
+                        <label>Email<br /> <input type="email" name="email" id="email" placeholder="odin@god.com"
+                                required></label>
+                        <label>Phone Number<br /> <input type="tel" name="phone" id="phone"
+                                pattern="[+0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+11-111-111-1111"
+                                required></label>
+                    </fieldset>
+                    <fieldset class="form__password">
+                        <label>Password<br />
+                            <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                id="password"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                required>
+                        </label>
+                        <label>Confirm Password<br />
+                            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password-confirm"
+                                id="password-confirm"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                required>
+                        </label>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="right__section3">
+                <button type="submit" form="form-account" class="right__section3-btn"><span>Create
+                        Account</span></button>
+                <p class="right__section3-text">Already have an account? <a href="#">Log in</a></p>
+            </div>
         </main>
     </div>
 </body>
+
 </html>

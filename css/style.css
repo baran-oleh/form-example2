@@ -25,10 +25,17 @@
       height: 25px;
       outline: none;
       border: none;
-      border-bottom: 2px solid #596D48; }
+      border-bottom: 2px solid #596D48;
+      padding: 5px 2px 5px 10px;
+      font-size: 16px; }
       .form__name label input:focus, .form__contact label input:focus, .form__password label input:focus {
-        border: 2px solid blue;
+        color: aliceblue;
+        background-color: #596D48;
         border-radius: 5px; }
+      .form__name label input:valid, .form__contact label input:valid, .form__password label input:valid {
+        border-bottom: 2px solid #596D48; }
+      .form__name label input:invalid, .form__contact label input:invalid, .form__password label input:invalid {
+        border-bottom: 2px solid red; }
   .form__name label:nth-child(1), .form__contact label:nth-child(1), .form__password label:nth-child(1) {
     margin-right: 50px; }
 
