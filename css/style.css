@@ -78,7 +78,9 @@ body {
   @media screen and (max-width: 850px) {
     .container {
       justify-content: center;
-      align-content: space-between; } }
+      align-content: space-between;
+      max-height: 0;
+      padding: 10px 0; } }
 
 .left {
   flex-basis: 38%;
